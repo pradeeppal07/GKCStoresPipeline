@@ -9,7 +9,7 @@ config = configparser.ConfigParser()
 config.read(r'../projectconfigs/config.ini')
 inputLocation = config.get('paths', 'inputLocation')
 
-
+# schema making
 landingFileSchema = StructType([
     StructField('Sale_ID', StringType(), True),
     StructField('Product_ID', StringType(), True),
