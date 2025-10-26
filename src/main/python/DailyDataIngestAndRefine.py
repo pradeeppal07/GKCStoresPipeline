@@ -20,6 +20,7 @@ landingFileSchema = StructType([
     StructField('Sale_Currency', IntegerType(), True)
 ])
 
+#landing file df
 landingFileDF = Spark.read\
     .schema(landingFileSchema)\
     .option("delimiter", "|")\
